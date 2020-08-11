@@ -1,0 +1,30 @@
+/* (headings) Francois One 
+https://fonts.google.com/specimen/Francois+One?query=fran
+
+(paragraphs) Lusitana
+https://fonts.google.com/specimen/Lusitana?query=lusitana */
+
+body {
+  font-family: "Lusitana", serif;
+}
+h1,
+h2,
+h3,
+h4,
+button,
+quoteblock,
+.appreciations {
+  font-family: "Francois One", sans-serif;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-links {
+  background-color: black;
+}
+.social-icon {
+  width: 30px;
+}
