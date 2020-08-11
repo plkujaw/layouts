@@ -7,24 +7,28 @@
       href="https://fonts.googleapis.com/css2?family=Francois+One&family=Lusitana:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./stylesreset.css" />
     <link rel="stylesheet" href="./styles.css" />
     <title>living in a big city</title>
   </head>
   <body>
     <header>
-      <h1 id="header">living in a big city</h1>
+      <h1 id="header"><strong>living in a big city</strong></h1>
     </header>
     <main>
       <section class="content-top">
         <!-- left column -->
         <figure>
-          <img src="./assets/blocks1.jpg" alt="block of flats windows" />
+          <img
+            src="./assets/blocks1.jpg"
+            alt="block of flats windows"
+            class="content-top-image"
+          />
         </figure>
 
         <!-- right column -->
         <article class="post">
-          <p>by Linda Awesome</p>
+          <h1 class="post-author"><strong>by Linda Awesome</strong></h1>
           <p>
             Hoodie ethical small batch wolf pug readymade. Cardigan photo booth
             tilde listicle, taxidermy gentrify hella lomo roof party irony
@@ -66,15 +70,21 @@
 
       <section class="content-middle">
         <figure>
-          <img src="./assets/blocks2.jpg" alt="city skyscrapers" />
+          <img
+            src="./assets/blocks2.jpg"
+            alt="city skyscrapers"
+            class="content-middle-image"
+          />
         </figure>
-        <quoteblock>
-          <p>
-            "Trust fund hella knausgaard, small batch mlkshk cold-pressed
-            <br />
-            authentic YOLO narwhal forage bushwick ethical."
-          </p>
-        </quoteblock>
+        <article class="quote">
+          <quoteblock>
+            <p>
+              "Trust fund hella knausgaard, small batch mlkshk cold-pressed
+              <br />
+              authentic YOLO narwhal forage bushwick ethical."
+            </p>
+          </quoteblock>
+        </article>
       </section>
     </main>
 
@@ -100,7 +110,7 @@
     <footer>
       <!-- left column -->
       <section class="about">
-        <h1>about author</h1>
+        <h1 class="about-author"><strong>about author</strong></h1>
         <figure>
           <img
             src="./assets/linda.png"
@@ -109,8 +119,8 @@
           />
         </figure>
 
-        <article>
-          <h2>linda awesome</h2>
+        <article class="author-info">
+          <h2 class="author-name"><strong>linda awesome</strong></h2>
           <p>
             Mumblecore offal shabby chic thundercats disrupt. Kale chips vegan
             crucifix, aesthetic twee slow-carb salvia trust fund ugh schlitz

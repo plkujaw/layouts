@@ -1,9 +1,98 @@
 /* color: #f3ce00; */
-figure {
-  margin: 0;
-  padding: 0;
+/* Fonts:
+(headings) Francois One 
+font-family: "Francois One", sans-serif
+
+(paragraphs) Lusitana
+font-family: "Lusitana", serif;*/
+strong {
+  font-weight: 700;
+}
+/* section,
+article,
+figure,
+img {
+  border: 1px solid black;
+} */
+h1 {
+  /* font-family: "Francois One", sans-serif; */
+  font-size: 2em;
+}
+h2 {
+  /* font-family: "Francois One", sans-serif; */
+  font-size: 1.5em;
+}
+
+p {
+  /* font-family: "Lusitana", serif; */
+  line-height: 1.5rem;
+  margin: 1rem 0;
+}
+
+#header {
+  font-family: "Francois One", sans-serif;
+  display: inline-block;
+  /* max-width: 70vw; */
+  position: relative;
+  /* width: 50%; */
+  top: 3rem;
+  margin-left: 13.5%;
+  padding: 2% 2% 2% 29%;
+  background-color: #f3ce00;
+  text-transform: uppercase;
+  text-align: right;
+  z-index: 2;
+}
+
+.content-top-image {
+  position: relative;
+  top: -1%;
+  float: left;
+  width: 50%;
+}
+.post {
+  font-family: "Lusitana", serif;
+  margin: 9% 10% 5% 1%;
+  width: 40%;
+  position: absolute;
+  display: inline-block;
+}
+.post-author {
+  font-family: "Lusitana", serif;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.content-middle-image {
+  margin-top: 5%;
+  text-align: right;
+  width: 90%;
+  position: relative;
+  right: -10%;
+}
+
+.quote {
+  display: inline-block;
+  font-family: "Francois One", sans-serif;
+  color: white;
+  background-color: black;
+  position: relative;
+  text-align: right;
+  top: -4.5rem;
+  margin-left: 6%;
+  padding: 0.4% 2% 0.4% 22%;
+  font-size: 1.2rem;
+}
+
+.social-links {
+  padding: 0.8% 0.2%;
+  display: inline-block;
+  position: fixed;
+  width: 50px;
+  top: 50%;
+  right: 0%;
+  background-color: black;
 }
 .social-icon {
-  background-color: black;
-  width: 30px;
+  width: 35px;
+  padding: 15%;
 }
