@@ -32,7 +32,7 @@ body {
   background: white;
   color: black;
   font-family: var(--paragraph-font);
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.25;
 }
 a {
@@ -55,6 +55,81 @@ h2 {
   font-size: 1.5rem;
 }
 
+/* 
+=====
+Header
+=====
+*/
+
+.header {
+  background: #f3ce00;
+  font-family: var(--heading-font);
+  padding: 1% 2% 1% 29%;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.content-top {
+  position: relative;
+  width: 100%;
+}
+.content-top-image-wrapper {
+  /* position: relative; */
+  /* top: -1%;
+  float: left;
+  width: 50%;
+  clear: both; */
+}
+.post {
+  font-family: "Lusitana", serif;
+  padding: 2% 9% 0 1%;
+  /* width: 100%; */
+  /* position: absolute; */
+  /* display: inline-block; */
+}
+.post-author {
+  font-family: "Lusitana", serif;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+/* .content-middle-image-wrapper {
+  margin-top: 5%;
+  margin-left: 10%;
+  text-align: right;
+  position: relative;
+  right: 0%;
+} */
+
+/* .quote {
+  display: inline-block;
+  font-family: "Francois One", sans-serif;
+  color: white;
+  background-color: black;
+  position: relative;
+  text-align: right;
+  top: -4.5rem;
+  margin-left: 6%;
+  padding: 0.4% 2% 0.4% 22%;
+  font-size: 1.2rem;
+} */
+
+.social-links {
+  padding: 0.8% 0.2%;
+  position: fixed;
+  width: 50px;
+  top: 50%;
+  right: 0%;
+  background-color: black;
+}
+.social-icon {
+  width: 35px;
+  padding: 15%;
+}
+
+.author-image-wrapper {
+  width: 20%;
+}
+
 @media screen and (min-width: 800px) {
   h1 {
     font-size: 2.5rem;
@@ -71,75 +146,25 @@ h2 {
     position: relative;
     top: 3rem;
     left: 10%;
-    padding: 1% 2% 1% 29%;
+    padding: 0.5% 2% 0.5% 29%;
+    z-index: 2;
   }
-}
-
-/* 
-=====
-Header
-=====
-*/
-
-.header {
-  background: #f3ce00;
-  font-family: var(--heading-font);
-  display: fixed;
-  padding: 1% 2% 1% 29%;
-  text-transform: uppercase;
-  text-align: right;
-  z-index: 2;
-}
-
-.content-top-image {
-  position: relative;
-  top: -1%;
-  float: left;
-  width: 50%;
-  clear: both;
-}
-.post {
-  font-family: "Lusitana", serif;
-  margin: 9% 10% 5% 1%;
-  width: 40%;
-  position: absolute;
-  display: inline-block;
-}
-.post-author {
-  font-family: "Lusitana", serif;
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-.content-middle-image {
-  margin-top: 5%;
-  margin-left: 10%;
-  text-align: right;
-  position: relative;
-  right: 0%;
-}
-
-.quote {
-  display: inline-block;
-  font-family: "Francois One", sans-serif;
-  color: white;
-  background-color: black;
-  position: relative;
-  text-align: right;
-  top: -4.5rem;
-  margin-left: 6%;
-  padding: 0.4% 2% 0.4% 22%;
-  font-size: 1.2rem;
-}
-
-.social-links {
-  padding: 0.8% 0.2%;
-  position: fixed;
-  width: 50px;
-  top: 50%;
-  right: 0%;
-  background-color: black;
-}
-.social-icon {
-  width: 35px;
-  padding: 15%;
+  .content-top {
+    position: relative;
+    width: 100%;
+  }
+  .content-top-image-wrapper {
+    /* position: absolute; */
+    /* top: -1%; */
+    float: left;
+    width: 50%;
+    /* clear: both; */
+  }
+  .post {
+    font-family: "Lusitana", serif;
+    padding: 7% 6% 0 1%;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+  }
 }
