@@ -1,44 +1,91 @@
-/* color: #f3ce00; */
-/* Fonts:
-(headings) Francois One 
-font-family: "Francois One", sans-serif
+/* 
+=====
+Variables
+=====
+*/
 
-(paragraphs) Lusitana
-font-family: "Lusitana", serif;*/
+:root {
+  --heading-font: "Francois One", sans-serif;
+  --paragraph-font: "Lusitana", serif;
+  --yellow: #f3ce00;
+}
+
+/* 
+=====
+Reset defaults
+=====
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+=====
+Global styles
+=====
+*/
+
+body {
+  background: white;
+  color: black;
+  font-family: var(--paragraph-font);
+  font-size: 0.875rem;
+  line-height: 1.25;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+p {
+  margin-bottom: 1.25rem;
+}
 strong {
   font-weight: 700;
 }
-/* section,
-article,
-figure,
-img {
-  border: 1px solid black;
-} */
 h1 {
-  /* font-family: "Francois One", sans-serif; */
-  font-size: 2em;
+  font-size: 2rem;
 }
 h2 {
-  /* font-family: "Francois One", sans-serif; */
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
-p {
-  /* font-family: "Lusitana", serif; */
-  line-height: 1.5rem;
-  margin: 1rem 0;
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  body {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .header {
+    display: inline-block;
+    position: relative;
+    top: 3rem;
+    left: 10%;
+    padding: 1% 2% 1% 29%;
+  }
 }
 
-#header {
-  font-family: "Francois One", sans-serif;
-  display: inline-block;
-  /* max-width: 70vw; */
-  position: relative;
-  /* width: 50%; */
-  top: 3rem;
-  margin-left: 13.5%;
-  padding: 2% 2% 2% 29%;
-  background-color: #f3ce00;
+/* 
+=====
+Header
+=====
+*/
+
+.header {
+  background: #f3ce00;
+  font-family: var(--heading-font);
+  display: fixed;
+  padding: 1% 2% 1% 29%;
   text-transform: uppercase;
   text-align: right;
   z-index: 2;
@@ -49,6 +96,7 @@ p {
   top: -1%;
   float: left;
   width: 50%;
+  clear: both;
 }
 .post {
   font-family: "Lusitana", serif;
@@ -64,10 +112,10 @@ p {
 }
 .content-middle-image {
   margin-top: 5%;
+  margin-left: 10%;
   text-align: right;
-  width: 90%;
   position: relative;
-  right: -10%;
+  right: 0%;
 }
 
 .quote {
@@ -85,7 +133,6 @@ p {
 
 .social-links {
   padding: 0.8% 0.2%;
-  display: inline-block;
   position: fixed;
   width: 50px;
   top: 50%;
