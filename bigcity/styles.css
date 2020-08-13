@@ -24,7 +24,7 @@ Reset defaults
 
 /* 
 =====
-Global styles
+Global styles default for small screen
 =====
 */
 
@@ -33,7 +33,7 @@ body {
   color: black;
   font-family: var(--paragraph-font);
   font-size: 1rem;
-  line-height: 1.25;
+  line-height: 1.35;
 }
 a {
   text-decoration: none;
@@ -74,18 +74,11 @@ Header
   width: 100%;
 }
 .content-top-image-wrapper {
-  /* position: relative; */
-  /* top: -1%;
-  float: left;
-  width: 50%;
-  clear: both; */
+  max-height: 30vh;
+  overflow: hidden;
 }
 .post {
-  font-family: "Lusitana", serif;
   padding: 2% 9% 0 1%;
-  /* width: 100%; */
-  /* position: absolute; */
-  /* display: inline-block; */
 }
 .post-author {
   font-family: "Lusitana", serif;
@@ -130,7 +123,13 @@ Header
   width: 20%;
 }
 
-@media screen and (min-width: 800px) {
+/* 
+===
+Styles for bigger screens
+===
+ */
+
+@media screen and (min-width: 960px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -138,7 +137,7 @@ Header
     font-size: 2rem;
   }
   body {
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.5;
   }
   .header {
@@ -156,15 +155,15 @@ Header
   .content-top-image-wrapper {
     /* position: absolute; */
     /* top: -1%; */
+    max-height: 100%;
     float: left;
     width: 50%;
     /* clear: both; */
   }
   .post {
-    font-family: "Lusitana", serif;
-    padding: 7% 6% 0 1%;
-    width: 50%;
     position: absolute;
+    padding: 8% 6% 0 1%;
+    width: 50%;
     left: 50%;
   }
 }
