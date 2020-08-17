@@ -164,7 +164,7 @@ Header
 }
 @media screen and (min-width: 768px) {
   .quote p {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 0.8em 1em 0.8em 0;
   }
 }
@@ -237,14 +237,16 @@ Header
   /* align-items: center; */
   font-family: var(--heading-font);
   text-align: center;
-  border: black 1px solid;
+  /* border: black 1px solid; */
 }
 
 @media screen and (min-width: 768px) {
   .appreciations {
+    /* position: absolute; */
+    /* top: %; */
     display: inline-block;
-    margin: 8% 0 0 10%;
-    height: 100%;
+    margin: 6% 0 0 10%;
+    max-height: 100%;
   }
 }
 
@@ -252,7 +254,8 @@ Header
   text-transform: uppercase;
 }
 .appreciations span {
-  font-size: 2rem;
+  font-size: 5.4rem;
+  margin-bottom: -15%;
   display: block;
 }
 
