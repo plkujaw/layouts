@@ -168,6 +168,89 @@ Header
     padding: 0.8em 1em 0.8em 0;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .content-bottom {
+    position: relative;
+    border: green 1px solid;
+  }
+}
+.about {
+  display: inline-block;
+
+  /* border: black 1px solid; */
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    float: left;
+    width: 60%;
+    margin: 0 0 0 7%;
+    border: red 1px solid;
+  }
+}
+.author-image {
+  float: left;
+  width: 25%;
+  margin: 0 2% 2% 0;
+}
+
+@media screen and (min-width: 768px) {
+  .author-image {
+    float: left;
+    width: 20%;
+    margin: 0 2% 2% 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .author-info {
+    border-right: black 1px solid;
+  }
+}
+
+.author-info h1,
+h2 {
+  font-family: var(--heading-font);
+}
+
+.author-info h1 {
+  text-transform: capitalize;
+  margin: 0 0 2% 0;
+}
+
+.author-info h2 {
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+
+.author-info p {
+  margin-right: 2%;
+}
+.appreciations {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-family: var(--heading-font);
+  text-align: center;
+  border: black 1px solid;
+}
+
+@media screen and (min-width: 768px) {
+  .appreciations {
+    display: inline-block;
+    margin: 8% 0 0 10%;
+    height: 100%;
+  }
+}
+
+.appreciations p {
+  text-transform: uppercase;
+}
+.appreciations span {
+  font-size: 2rem;
+  display: block;
+}
+
 .social-links {
   padding: 0.8% 0.2%;
   position: fixed;
@@ -179,8 +262,4 @@ Header
 .social-icon {
   width: 35px;
   padding: 15%;
-}
-
-.author-image-wrapper {
-  width: 20%;
 }
