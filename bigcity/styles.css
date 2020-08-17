@@ -172,12 +172,13 @@ Header
 @media screen and (min-width: 768px) {
   .content-bottom {
     position: relative;
-    border: green 1px solid;
+    overflow: auto;
+    width: 100%;
+    /* border: green 1px solid; */
   }
 }
 .about {
   display: inline-block;
-
   /* border: black 1px solid; */
 }
 
@@ -186,7 +187,14 @@ Header
     float: left;
     width: 60%;
     margin: 0 0 0 7%;
-    border: red 1px solid;
+    /* border: red 1px solid; */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .author-name {
+    display: inline-block;
+    margin-top: -0.75%;
   }
 }
 .author-image {
@@ -204,21 +212,18 @@ Header
 }
 @media screen and (min-width: 768px) {
   .author-info {
-    border-right: black 1px solid;
+    border-right: black 2px solid;
   }
 }
 
-.author-info h1,
-h2 {
+.about-author {
   font-family: var(--heading-font);
-}
-
-.author-info h1 {
   text-transform: capitalize;
   margin: 0 0 2% 0;
 }
 
 .author-info h2 {
+  font-family: var(--heading-font);
   text-transform: uppercase;
   margin-bottom: 2%;
 }
