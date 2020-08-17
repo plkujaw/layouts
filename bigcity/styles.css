@@ -206,8 +206,8 @@ Header
 @media screen and (min-width: 768px) {
   .author-image {
     float: left;
-    width: 20%;
-    margin: 0 2% 2% 0;
+    width: 9em;
+    margin: 0 3% 2% 0;
   }
 }
 @media screen and (min-width: 768px) {
