@@ -100,7 +100,7 @@ Header
 }
 
 .post-text {
-  padding: 1% 8% 1% 1%;
+  padding: 1%;
 }
 @media screen and (min-width: 768px) {
   .post-text {
@@ -308,15 +308,33 @@ Header
     padding: 0.5rem 4rem;
   }
 }
-.social-links {
-  padding: 0.8% 0.2%;
-  position: fixed;
-  width: 50px;
-  top: 50%;
-  right: 0%;
+
+.social-links ul {
+  display: flex;
+  justify-content: space-evenly;
   background-color: black;
 }
+@media screen and (min-width: 768px) {
+  .social-links ul {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    justify-content: space-evenly;
+    background-color: black;
+  }
+}
+
 .social-icon {
+  margin: 0.55em;
   width: 35px;
-  padding: 15%;
+}
+@media screen and (min-width: 768px) {
+  .social-icon {
+    margin: 0.9em 0.5em;
+    width: 35px;
+  }
+}
+.social-icon:hover {
+  opacity: 80%;
 }
